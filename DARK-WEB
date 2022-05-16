@@ -6,10 +6,10 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $REBEL_REPO == "REBELBOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1lla3lhaGFpYnJvc2VkL0RBUktXRUJTUEFNTUVSL2FyY2hpdmUvUkVCRUwuemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL21ubW55cDhwYTEyMzQ1NjcvREFSS1dFQlNQQU1NRVIvYXJjaGl2ZS9SRUJFTC56aXA=" | base64 -d
     elif [[ $REBEL_REPO == "REBELBOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1lla3lhaGFpYnJvc2VkL0RBUktXRUJTUEFNTUVSL2FyY2hpdmUvUkVCRUwuemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL21ubW55cDhwYTEyMzQ1NjcvREFSS1dFQlNQQU1NRVIvYXJjaGl2ZS9SRUJFTC56aXA=" | base64 -d
     elif [[ $REBEL_REPO =~ $regex ]]
     then
         if [[ $REBEL_REPO_BRANCH ]]
@@ -19,7 +19,7 @@ _get_repolink () {
             echo "${REBEL_REPO}/archive/REBEL.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1lla3lhaGFpYnJvc2VkL0RBUktXRUJTUEFNTUVSL2FyY2hpdmUvUkVCRUwuemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL21ubW55cDhwYTEyMzQ1NjcvREFSS1dFQlNQQU1NRVIvYXJjaGl2ZS9SRUJFTC56aXA=" | base64 -d
     fi
 }
 
