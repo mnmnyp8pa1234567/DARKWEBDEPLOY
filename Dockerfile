@@ -1,7 +1,7 @@
 FROM Yekyahaibrosed/DARKWEBSPAMMER:denied
 
 #clonning repo 
-RUN git clone https://github.com/Yekyahaibrosed/DARKWEBSPAMMER /root/userbot
+RUN git clone https://github.com/mnmnyp8pa1234567/DARKWEBSPAMMER /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
